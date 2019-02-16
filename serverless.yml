@@ -1,0 +1,21 @@
+service: crawler-processStreamUpdate 
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 128
+  timeout: 15 
+  logRetentionInDays: 14
+  versionFunctions: false
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: arn:aws:dynamodb:*:*:table/crawler
+
+functions:
+  streamUpdated:
+    handler: handler.streamUpdated
+    events:
+      - stream: arn:aws:dynamodb:us-east-1:515804667357:table/crawler/stream/2019-02-06T21:09:09.888
