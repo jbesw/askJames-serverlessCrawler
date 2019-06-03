@@ -25,7 +25,7 @@ Clone and ```npm install``` in your downloaded directory.
 Don't forget to:
 
 - Update your testEvent.json
-- Create the DynamoDB table 'crawler'
+- Create the DynamoDB table 'crawler' - the table should have a partition key called 'url', no sort key and capacity set to on-demand.
 - Add the stream ARN in serverless.yaml (when you are ready)
 - Spend time to test and understand what the code is doing
 
