@@ -1,6 +1,6 @@
 # Ask James - The Serverless Web Crawler
 
-There is an article explaining the usage of this code here: TBD.
+There is an article explaining the usage of this code here: https://read.acloud.guru/how-to-build-a-serverless-web-crawler-7c1c2f37a36.
 
 This is naive crawler that's a Proof of Concept and not appropriate for production usage. Do not use against production websites. Do not use against websites where you do not have permission to crawl. Do not violate AWS Terms & Conditions.
 
