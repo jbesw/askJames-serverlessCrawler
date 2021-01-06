@@ -9,11 +9,11 @@
   "author": "James Beswick",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.1",
-    "cheerio": "^1.0.0-rc.2",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
     "url": "^0.11.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.398.0"
+    "aws-sdk": "^2.823.0"
   }
 }
